@@ -1,0 +1,11 @@
+@import '../../common/scss/colors';
+@import '../../common/scss/variables';
+
+.contentwrapper {
+    background-color: $main-white;
+    border-radius: $br-4;
+    margin-bottom: 4.6rem;
+    max-width: 120rem;
+    padding: 0 1.6rem;
+    width: 100%;
+}

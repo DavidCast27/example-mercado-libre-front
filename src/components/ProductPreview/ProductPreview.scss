@@ -1,0 +1,82 @@
+@import '../../common/scss/colors';
+@import '../../common/scss/variables';
+
+.productpreview {
+    padding: 0 1.6rem;
+
+    &__main {
+        padding-top: 3.2rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main {
+
+        &__picture {
+            width: 68rem;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.6rem;
+            max-width: 30rem;
+        }
+
+        .info {
+
+            &__conditionandsales {
+                color: $gray-5;
+                font-size: $fs-14;
+                margin-bottom: 1.6rem;
+                text-transform: capitalize;
+            }
+
+            &__title {
+                color: $gray-5;
+                font-size: $fs-24;
+                margin-bottom: 3.2rem;
+            }
+
+            &__price {
+                color: $gray-5;
+                font-size: $fs-46;
+                margin-bottom: 3.2rem;
+            }
+
+            &__buy {
+                background-color: $main-blue;
+                border-color: $main-blue;
+                border-radius: $br-4;
+                border-style: solid;
+                color: $main-white;
+                cursor: pointer;
+                font-size: $fs-16;
+                height: 4rem;
+            }
+        }
+    }
+
+    &__decription {
+        margin-top: 8rem;
+        margin-right: 26rem;
+    }
+
+    .decription {
+        
+        &__title {
+            color: $gray-5;
+            font-size: $fs-28;
+            margin-bottom: 3.2rem;
+        }
+        
+        &__paragraph {
+            color: $gray-3;
+            font-size: $fs-16;
+            margin-bottom: 3.2rem;
+            text-align: justify;
+
+        }
+    }
+}

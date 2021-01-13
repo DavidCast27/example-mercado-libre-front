@@ -1,0 +1,55 @@
+@import '../../common/scss/colors';
+@import '../../common/scss/variables';
+
+.searchbar {
+    max-height: 4rem;
+    min-height: 3.8rem;
+    width: 100%;
+    max-width: 108rem;
+
+    &__input {
+        border: 0;
+        border-bottom-left-radius: $br-4;
+        border-top-left-radius: $br-4;
+        font-size: $fs-18;
+        max-height: 4rem;
+        min-height: 3.8rem;
+        padding-left: 1.6rem;
+        width: 100%;
+        
+        &::placeholder {
+            color: $gray-2;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        align-items: center;
+        background-color: $gray-1;
+        border-bottom-right-radius: $br-4;
+        border-color: $gray-1;
+        border-style: solid;
+        border-top-right-radius: $br-4;
+        display: flex;
+        max-height: 4rem;
+        min-height: 3.8rem;
+        justify-content: center;
+        max-width: 4.5rem;
+        min-width: 4.2rem;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .button {
+
+        &__icon {
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+    }
+}

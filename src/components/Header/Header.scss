@@ -1,0 +1,25 @@
+@import '../../common/scss/colors';
+
+.header {
+    align-items: center;
+    background-color: $main-yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 6rem;
+    min-height: 5.6rem;
+    padding: 1rem 1.6rem;
+    width: 100%;
+
+    &__logo {
+        cursor: pointer;
+        margin-right: 1.3rem;
+        max-height: 4rem;
+        min-height: 3.8rem;
+    }
+
+    &__searchbar {
+        display: flex;
+        margin-left: 1.3rem;
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../common/scss/variables';
+
+.heading {
+    align-items: center;
+    display: flex;
+    height: 2.4rem;
+    margin-bottom: 3.2rem;
+
+    &__price {
+        font-size: $fs-24;
+    }
+
+    &__shipping {
+        height: 2.4rem;
+        padding-top: 0.4rem;
+    }
+
+    .shipping {
+
+        &__icon {
+            height: 1.8rem;
+            margin-left: 0.8rem;
+        }
+    }
+}
