@@ -12,22 +12,30 @@ function SearchResults() {
         if(itemsContext){
             setItems(itemsContext.items);
         }
-      }, [itemsContext]);
+    }, [itemsContext]);
+
+    const _getItems = (
+        <ul>
+            {
+                items.map((item, key) => {
+                    const isLast = items.length - 1 === key;
+                    return (
+                        <ListItem key={key}
+                            isLast={isLast}
+                            { ...item } />
+                    );
+                })
+            }
+        </ul>
+    );
+
+    const _itemsNotFound = (<h2 className="searchresults__itemsnotfound"> No se encontraron elementos de acuerdo a la busqueda </h2>)
 
     return (
         <ContentWrapper>
-            <ul>
-                {
-                    items.map((item, key) => {
-                        const isLast = items.length - 1 === key;
-                        return (
-                            <ListItem key={key}
-                                isLast={isLast}
-                                { ...item } />
-                        );
-                    })
-                }
-            </ul>
+            {items.length !== 0
+                ? _getItems 
+                : _itemsNotFound}
         </ContentWrapper>
     );
 }
