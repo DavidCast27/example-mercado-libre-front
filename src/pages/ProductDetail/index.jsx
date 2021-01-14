@@ -6,8 +6,6 @@ import ContentWrapper from '../../components/ContentWrapper';
 import ProductPreview from '../../components/ProductPreview';
 // import mockDetail from '../../mocks/mockDetail.json';
 import './ProductDetail.scss';
-import NotFound from '../NotFound';
-
 
 
 function ProductDetail() {
@@ -30,11 +28,7 @@ function ProductDetail() {
     }, []);
     return (
         <ContentWrapper>
-            {
-                item
-                 ? <ProductPreview { ...item } />
-                 : <NotFound/>
-            }
+            { item && <ProductPreview { ...item } />}
         </ContentWrapper>
     );
 }

@@ -29,16 +29,9 @@ function SearchResults() {
         </ul>
     );
 
-    const _itemsNotFound = (
-        <h2 className="searchresults__itemsnotfound"> 
-            No se encontraron elementos de acuerdo a la busqueda 
-        </h2>)
-
     return (
         <ContentWrapper>
-            {items.length !== 0
-                ? _getItems 
-                : _itemsNotFound}
+            { items &&  _getItems }
         </ContentWrapper>
     );
 }
