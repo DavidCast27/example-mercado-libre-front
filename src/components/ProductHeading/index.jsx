@@ -3,7 +3,7 @@ import { formatCurrency } from '../../common/js/formatter';
 import currencyLocalDictionary from '../../common/js/currencyLocal';
 import './ProductHeading.scss';
 
-function ProductHeading({ className, price, offersShipping = false }) {
+function ProductHeading({ className, price = {}, offersShipping = false }) {
     const currencyLocal = currencyLocalDictionary[price.currency];
     const formmatterPrice = formatCurrency({
         number: price.amount,
