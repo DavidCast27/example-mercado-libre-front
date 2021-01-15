@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+This project use yarn with package manager. You will need to download dependencies using `yarn` command
+
+# Technologies
+- Package manager: [Yarn](https://yarnpkg.com/)
+- CSS architecture: [Blocks, Elements and Modifiers (BEM)](http://getbem.com/),
+- React version: 17
 
 ## Available Scripts
 
